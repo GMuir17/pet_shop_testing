@@ -51,3 +51,7 @@ end
 def customer_cash(customer_list)
   return customer_list[:cash]
 end
+
+def remove_customer_cash(customer_list, cash)
+    customer_list[:cash] -= cash
+end
