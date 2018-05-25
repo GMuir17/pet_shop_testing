@@ -38,3 +38,8 @@ def find_pet_by_name(shop, pet_name)
   end
   return nil
 end
+
+def remove_pet_by_name(shop, pet_name)
+  pet = find_pet_by_name(shop, pet_name)
+  shop[:pets].delete(pet)
+end
